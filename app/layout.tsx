@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { assets } from "@/lib/assets";
 import "./globals.css";
 
 const sans = Inter({
@@ -31,18 +32,18 @@ export const metadata: Metadata = {
   title,
   description,
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
-  icons: { icon: "/icon.png", apple: "/icon.png" },
+  icons: { icon: assets.icon, apple: assets.icon },
   openGraph: {
     title,
     description,
     type: "website",
-    images: [{ url: "/assets/banner.png", alt: "CatGPT 7.0 black cat mascot on cardboard boxes" }]
+    images: [{ url: assets.banner, alt: "CatGPT 7.0 black cat mascot on cardboard boxes" }]
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/assets/banner.png"]
+    images: [assets.banner]
   }
 };
 

@@ -71,7 +71,7 @@ Title: `CatGPT 7.0 ($CATGPT7) — Ethereum's Next-Generation Cat`. Icons and Ope
 
 ## Build and Pages
 
-`next.config.ts` sets `output: 'export'` and `images.unoptimized`. Local builds have no `basePath`. GitHub Actions sets `PAGES_BASE_PATH=/CATGPT7` so assets resolve at `https://jackmiller825.github.io/CATGPT7/`.
+`next.config.ts` sets `output: 'export'` and `images.unoptimized`. Local builds have no `basePath`. GitHub Actions sets `PAGES_BASE_PATH=/CATGPT7`. `publicPath()` in `lib/assets.ts` prefixes image URLs with that path, because `next/image` leaves public files unprefixed when optimization is off. The live site is `https://jackmiller825.github.io/CATGPT7/`.
 
 ## Current limitations
 
