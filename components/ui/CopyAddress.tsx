@@ -12,11 +12,11 @@ export function CopyAddress({ wide = false, short = false }: { wide?: boolean; s
   const [copied, setCopied] = useState(false);
 
   async function copy() {
-    if (!ready) return;
+    const value = ready ? address : tokenConfig.contractDisplay;
     try {
-      await navigator.clipboard.writeText(address);
+      await navigator.clipboard.writeText(value);
       setCopied(true);
-      toast("contract copied to clipboard");
+      toast("copied to clipboard");
       window.setTimeout(() => setCopied(false), 1400);
     } catch {
       toast("copy failed — select it by hand");
@@ -30,12 +30,11 @@ export function CopyAddress({ wide = false, short = false }: { wide?: boolean; s
       type="button"
       className={`ca${wide ? " ca-wide" : ""}${copied ? " ok" : ""}`}
       onClick={copy}
-      disabled={!ready}
-      aria-label={ready ? "Copy Ethereum contract address" : "Contract address not announced"}
+      aria-label={ready ? "Copy Ethereum contract address" : "Copy contract status"}
     >
       <i />
       <code>{label}</code>
-      <s>{ready ? (copied ? "copied" : "copy") : "soon"}</s>
+      <s>{copied ? "Copied" : "Copy"}</s>
     </button>
   );
 }

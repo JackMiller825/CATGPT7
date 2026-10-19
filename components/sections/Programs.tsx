@@ -5,7 +5,7 @@ export function Programs() {
     <section className="pn" id="programs">
       <header className="pn-h">
         <h2>Programs</h2>
-        <span>concepts · not launched</span>
+        <span>funds reserved up front</span>
       </header>
       <div className="pn-b prog-grid">
         {programs.map((program) => (

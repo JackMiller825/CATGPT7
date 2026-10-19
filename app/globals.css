@@ -370,8 +370,7 @@ h1 {
   overflow: hidden;
   border: 1.5px solid var(--ink);
 }
-.split i { display: block; flex: 1; }
-.split-pending i { opacity: 0.45; }
+.split i { display: block; min-width: 0; }
 .s-buyback { background: var(--red); }
 .s-rewards { background: var(--board); }
 .s-reserve { background: var(--green); }

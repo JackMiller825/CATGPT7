@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { assets } from "@/lib/assets";
-import { disclaimer, footerLinks, tokenConfig } from "@/lib/config";
+import { footerLinks, tokenConfig } from "@/lib/config";
 import { contractLabel, isFilled } from "@/lib/utils";
 
 export function Footer() {
@@ -28,7 +28,6 @@ export function Footer() {
           )}
         </nav>
       </div>
-      <p className="disclaimer">{disclaimer}</p>
     </footer>
   );
 }

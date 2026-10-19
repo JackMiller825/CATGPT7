@@ -1,15 +1,5 @@
 import { tokenConfig, treasury } from "@/lib/config";
 
-const statusLabel = {
-  unverified: "Pending verification",
-  verified: "Verified",
-  pending: "Pending verification"
-} as const;
-
-function statusText(value: string) {
-  return value in statusLabel ? statusLabel[value as keyof typeof statusLabel] : value;
-}
-
 export function Treasury() {
   return (
     <section className="pn" id="treasury">
@@ -18,17 +8,16 @@ export function Treasury() {
         <span>{treasury.status}</span>
       </header>
       <div className="pn-b">
-        <div className="split split-pending" role="img" aria-label="Treasury allocation is not configured">
-          <i className="s-buyback" />
-          <i className="s-rewards" />
-          <i className="s-reserve" />
-          <i className="s-creative" />
+        <div className="split" role="img" aria-label="Split: buyback 10%, rewards 10%, reserve 75%, creative 5%">
+          {treasury.legend.map((item) => (
+            <i key={item.key} className={`s-${item.key}`} style={{ flexGrow: item.share }} />
+          ))}
         </div>
         <ul className="legend">
           {treasury.legend.map((item) => (
             <li key={item.key}>
               <i className={`s-${item.key}`} />
-              {item.label} <b>—</b>
+              {item.label} <b>{item.share}%</b>
             </li>
           ))}
         </ul>
@@ -43,8 +32,8 @@ export function Treasury() {
           ))}
         </ul>
         <p className="note">
-          Network: {tokenConfig.chain} · Liquidity: {statusText(tokenConfig.liquidityStatus)} · Ownership:{" "}
-          {statusText(tokenConfig.ownershipStatus)} · Contract: {tokenConfig.contractDisplay}
+          Network: {tokenConfig.chain} · LP: {tokenConfig.liquidityStatus} · Ownership: {tokenConfig.ownershipStatus} ·
+          Contract: {tokenConfig.contractDisplay}
         </p>
       </div>
     </section>

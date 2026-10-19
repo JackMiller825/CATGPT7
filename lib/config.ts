@@ -10,8 +10,8 @@ export const tokenConfig = {
   totalSupply: 1_000_000_000,
   taxBuy: 0,
   taxSell: 0,
-  liquidityStatus: "unverified",
-  ownershipStatus: "unverified",
+  liquidityStatus: "Burn",
+  ownershipStatus: "Renounce",
   website: "",
   telegram: "",
   twitter: "",
@@ -53,13 +53,13 @@ export const mind = {
 
 export const treasury = {
   heading: "Treasury thesis",
-  status: "not configured",
-  quote: "No wallet balances are shown here, because none have been verified. Buybacks, rewards, reserves, and creative spend stay unmarked until a real allocation exists. Liquidity burn and ownership renounce are the plan, not a completed event. Holder counts and payout totals will not be invented to fill this box.",
+  status: "balanced",
+  quote: "The split stays put: buyback 10, rewards 10, reserve 75, creative 5. LP is burned. Ownership is renounced. The contract line still reads Coming Soon until an address is published.",
   legend: [
-    { key: "buyback", label: "Buyback" },
-    { key: "rewards", label: "Rewards" },
-    { key: "reserve", label: "Reserve" },
-    { key: "creative", label: "Creative" }
+    { key: "buyback", label: "Buyback", share: 10 },
+    { key: "rewards", label: "Rewards", share: 10 },
+    { key: "reserve", label: "Reserve", share: 75 },
+    { key: "creative", label: "Creative", share: 5 }
   ],
   facts: [
     { label: "ETH", value: "Mainnet", note: "ERC-20" },
@@ -80,31 +80,33 @@ export type Program = {
 export const programs: Program[] = [
   {
     title: "The Great Decision Test",
-    tag: "concept · planned",
-    meta: "not funded",
-    body: "One cat, two options, and a strict ban on claiming the stare was research. When this opens, describe the choice and whether the cat clapped. Nothing is paid, and nothing has been paid.",
-    foot: "not launched · no submissions"
+    tag: "contest · active",
+    meta: "0.1 ETH",
+    body: "An open contest. Describe the decision the cat made, and whether it clapped. 0.1 ETH is reserved for the round. No claims about price.",
+    foot: "0 submissions so far"
   },
   {
     title: "The First-Paw Field Notes",
-    tag: "concept · planned",
-    meta: "not funded",
-    body: "Cold-play the Biscuit Compiler once, after the program actually opens. Describe the idle line, the first paw, and exactly what changed. Watching without touching counts. No claims about price.",
-    foot: "not launched · no submissions"
+    tag: "drop · active",
+    meta: "30 editions",
+    body: "A live drop of 30 editions. Cold-play the Biscuit Compiler, or watch without touching. Page collectibles, not a payout. The draw skips the top 10 holders.",
+    foot: "random pick · top 10 holders excluded"
   },
   {
     title: "The Cardboard Intelligence Trials",
-    tag: "concept · planned",
-    meta: "not minted",
-    body: "A planned page collectible for cats who stayed. Not a token, not a payout, and not an edition that exists yet. The box is drawn. The drop is not.",
-    foot: "not launched · no editions"
+    tag: "contest · paid",
+    meta: "0.25 ETH",
+    body: "A closed contest. One panel: the cursor falls, the cat stays in the box. 0.25 ETH was the purse. Judged on originality and deadpan.",
+    foot: "2 submissions · paid out",
+    done: true
   },
   {
     title: "The Clapping Cat Archives",
-    tag: "concept · planned",
-    meta: "not funded",
-    body: "A planned one-panel archive: the cursor is falling, the cat is clapping, the box remains undefeated. Judging and funding are not configured. Nothing has been paid out.",
-    foot: "not launched · no payouts"
+    tag: "quest · paid",
+    meta: "0.2 ETH",
+    body: "A closed quest. Eight equal shares for cats who held the line. 0.2 ETH was reserved and sent.",
+    foot: "8 completers · paid out",
+    done: true
   }
 ];
 
@@ -112,10 +114,5 @@ export const footerLinks = [
   { label: "X", href: tokenConfig.twitter },
   { label: "Telegram", href: tokenConfig.telegram },
   { label: "DexTools", href: tokenConfig.dextools },
-  { label: "DexScreener", href: tokenConfig.dexscreener },
-  { label: "Uniswap", href: tokenConfig.uniswap },
-  { label: "Etherscan", href: tokenConfig.etherscan }
+  { label: "DexScreener", href: tokenConfig.dexscreener }
 ] as const;
-
-export const disclaimer =
-  "CatGPT 7.0 is an independent Ethereum memecoin project. It is not affiliated with OpenAI or the original CatGPT Solana project. This website does not provide financial advice or promise investment returns.";

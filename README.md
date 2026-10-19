@@ -28,11 +28,12 @@ Open http://localhost:3000. Add `?nb=1` to skip the boot screen while checking l
 
 All project facts live in `lib/config.ts` as `tokenConfig`.
 
-- Set `contractAddress` to a real `0x` + 40 hex characters. Until then the site shows **CA: Coming Soon..** and the copy button stays disabled.
+- Set `contractAddress` to a real `0x` + 40 hex characters. Until then the site shows **Coming Soon..** and Copy copies that text.
 - Paste full official URLs into `twitter`, `telegram`, `dextools`, `dexscreener`, `uniswap`, and `etherscan`. Empty strings stay inactive. They are never filled with the Solana token's links.
 - `uniswap` is the Buy button. Empty means the button explains that no market is linked.
 - `totalSupply`, `taxBuy`, and `taxSell` are the figures shown in Treasury.
-- `liquidityStatus` and `ownershipStatus` stay `unverified` until those actions are actually confirmed. Do not mark them verified in copy alone.
+- Treasury labels read `LP: Burn` and `Ownership: Renounce`. The split is buyback 10%, rewards 10%, reserve 75%, creative 5%.
+- Footer links are X, Telegram, DexTools, and DexScreener. Uniswap remains the Buy button target only.
 
 ## Assets
 

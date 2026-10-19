@@ -15,7 +15,7 @@ Update this file whenever a feature is added, changed, or removed.
 
 ## Contract address
 
-`contractAddress` is `null` until a verified Ethereum address exists. The header, hero, and footer then show `Coming Soon..`. The copy control is disabled and will not write a placeholder to the clipboard.
+`contractAddress` is `null` until a verified Ethereum address exists. The header, hero, and footer then show `Coming Soon..`. The Copy button still works and copies that status text. After a valid `0x` address is set, Copy copies the full address.
 
 When you set a valid `0x` address:
 
@@ -76,7 +76,7 @@ Title: `CatGPT 7.0 ($CATGPT7) — Ethereum's Next-Generation Cat`. Icons and Ope
 ## Current limitations
 
 - Contract, liquidity burn, ownership renounce, and every external URL are unverified. The treasury bar is an even, faded placeholder, not a 10/10/75/5 allocation and not a wallet balance.
-- Programs are concepts. No reward totals are shown.
+- Programs show the configured contest, drop, and paid-quest states, including the ETH amounts in `lib/config.ts`. Paid cards use the faded reference treatment.
 - Gallery images are the supplied full-size PNGs. They are large.
 - The mobile menu button is an addition so small screens can reach sections. The reference hides those links.
 - `alternate-*` artwork is unused on the page.
@@ -90,11 +90,11 @@ Title: `CatGPT 7.0 ($CATGPT7) — Ethereum's Next-Generation Cat`. Icons and Ope
 | Reduced motion | `app/globals.css`, boot | OS reduced-motion: lines appear together, no blink |
 | Same-page navigation | `components/layout/Header.tsx` | Each link scrolls with the heading below the bar |
 | Mobile navigation | header, max-width 880px | Open the round menu, follow a section |
-| Contract copy | `CopyAddress.tsx`, `lib/config.ts` | Coming Soon.. and a disabled button; then a real `0x` address copies |
-| Treasury facts | `Treasury.tsx` | Ethereum, 1,000,000,000, 0% tax, pending liquidity and ownership |
-| Programs | `Programs.tsx` | Four planned cards, no payout figures |
+| Contract copy | `CopyAddress.tsx`, `lib/config.ts` | Copy works on Coming Soon.. and on a real `0x` address |
+| Treasury facts | `Treasury.tsx` | 10/10/75/5 split, LP: Burn, Ownership: Renounce |
+| Programs | `Programs.tsx` | Active contest and drop, two paid cards with the faded style |
 | Biscuit Compiler | `BiscuitCompiler.tsx` | Inspect all three, see persistent state, recompile |
 | Gallery filters and lightbox | `Gallery.tsx` | 22 images, ascii, lore, Escape, arrows, backdrop |
-| Footer disclaimer | `Footer.tsx` | Inactive social labels, Ethereum disclaimer |
+| Footer links | `Footer.tsx` | X, Telegram, DexTools, DexScreener only |
 | Static export | `next.config.ts` | `npm run build` writes `out/` |
 | Docs coverage | `scripts/check-docs.mjs` | `npm run check:docs` |
