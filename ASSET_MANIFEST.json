@@ -1,0 +1,174 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 53
+  },
+  {
+    "path": "HELP.md",
+    "bytes": 1321
+  },
+  {
+    "path": "README.md",
+    "bytes": 2015
+  },
+  {
+    "path": "app/globals.css",
+    "bytes": 12158
+  },
+  {
+    "path": "app/layout.tsx",
+    "bytes": 482
+  },
+  {
+    "path": "app/page.tsx",
+    "bytes": 106
+  },
+  {
+    "path": "components/Experience.tsx",
+    "bytes": 12595
+  },
+  {
+    "path": "lib/config.ts",
+    "bytes": 899
+  },
+  {
+    "path": "next-env.d.ts",
+    "bytes": 81
+  },
+  {
+    "path": "next.config.ts",
+    "bytes": 151
+  },
+  {
+    "path": "package.json",
+    "bytes": 481
+  },
+  {
+    "path": "public/assets/alternate-banner.png",
+    "bytes": 2482879
+  },
+  {
+    "path": "public/assets/alternate-logo.png",
+    "bytes": 2423787
+  },
+  {
+    "path": "public/assets/alternate-mascot.png",
+    "bytes": 2184517
+  },
+  {
+    "path": "public/assets/alternate-telegram.png",
+    "bytes": 2431237
+  },
+  {
+    "path": "public/assets/banner.png",
+    "bytes": 1381409
+  },
+  {
+    "path": "public/assets/gallery/01.png",
+    "bytes": 2418092
+  },
+  {
+    "path": "public/assets/gallery/02.png",
+    "bytes": 2276797
+  },
+  {
+    "path": "public/assets/gallery/03.png",
+    "bytes": 2091559
+  },
+  {
+    "path": "public/assets/gallery/04.png",
+    "bytes": 2073929
+  },
+  {
+    "path": "public/assets/gallery/05.png",
+    "bytes": 2024823
+  },
+  {
+    "path": "public/assets/gallery/06.png",
+    "bytes": 1900705
+  },
+  {
+    "path": "public/assets/gallery/07.png",
+    "bytes": 1984900
+  },
+  {
+    "path": "public/assets/gallery/08.png",
+    "bytes": 1979339
+  },
+  {
+    "path": "public/assets/gallery/09.png",
+    "bytes": 2007660
+  },
+  {
+    "path": "public/assets/gallery/10.png",
+    "bytes": 1933825
+  },
+  {
+    "path": "public/assets/gallery/11.png",
+    "bytes": 1947377
+  },
+  {
+    "path": "public/assets/gallery/12.png",
+    "bytes": 2225117
+  },
+  {
+    "path": "public/assets/gallery/13.png",
+    "bytes": 1885998
+  },
+  {
+    "path": "public/assets/gallery/14.png",
+    "bytes": 1915179
+  },
+  {
+    "path": "public/assets/gallery/15.png",
+    "bytes": 1871465
+  },
+  {
+    "path": "public/assets/gallery/16.png",
+    "bytes": 2055593
+  },
+  {
+    "path": "public/assets/gallery/17.png",
+    "bytes": 2178821
+  },
+  {
+    "path": "public/assets/gallery/18.png",
+    "bytes": 1763855
+  },
+  {
+    "path": "public/assets/gallery/19.png",
+    "bytes": 1870696
+  },
+  {
+    "path": "public/assets/gallery/20.png",
+    "bytes": 1911112
+  },
+  {
+    "path": "public/assets/gallery/21.png",
+    "bytes": 1871113
+  },
+  {
+    "path": "public/assets/gallery/22.png",
+    "bytes": 2046131
+  },
+  {
+    "path": "public/assets/logo.png",
+    "bytes": 2282458
+  },
+  {
+    "path": "public/assets/mascot.png",
+    "bytes": 2184517
+  },
+  {
+    "path": "public/assets/telegram.png",
+    "bytes": 1107563
+  },
+  {
+    "path": "public/icon.png",
+    "bytes": 399442
+  },
+  {
+    "path": "tsconfig.json",
+    "bytes": 665
+  }
+]
