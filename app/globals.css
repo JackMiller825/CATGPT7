@@ -167,7 +167,8 @@ button, a { font: inherit; }
   border: 1.5px solid var(--ink);
   object-fit: cover;
 }
-.bar-brand span { display: flex; flex-direction: column; line-height: 1.1; }
+.bar-brand > span { display: flex; flex-direction: column; line-height: 1.1; }
+.ver { display: inline; }
 .bar-brand b { font-family: var(--serif); font-size: 1.05rem; white-space: nowrap; }
 .bar-brand em {
   font-family: var(--mono);
